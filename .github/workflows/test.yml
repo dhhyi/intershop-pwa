@@ -151,16 +151,6 @@ jobs:
         if: github.ref != 'refs/heads/develop'
         run: node docs/check-dead-links origin/develop
 
-  Docker:
-    needs: [Build]
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v1
-
-      - name: Build PWA Docker Image
-        run: docker build .
-
   Universal:
     needs: [Build]
     runs-on: ubuntu-latest
