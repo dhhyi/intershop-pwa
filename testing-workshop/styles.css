@@ -20,7 +20,7 @@ h3 {
 }
 
 .remark-slide-content {
-  padding: 1em 2em 1em 2em;
+  padding: 0.3em 2em 1em 2em;
   font-size: xx-large;
   background: rgb(129, 129, 129);
   background: linear-gradient(
@@ -44,6 +44,15 @@ h3 {
   right: 1em;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: xx-large;
+  opacity: 0.5;
+}
+
+.bottomlink {
+  position: absolute;
+  bottom: 0.5em;
+  left: 4em;
+  font-family: 'Droid Serif', serif;
+  font-size: large;
   opacity: 0.5;
 }
 

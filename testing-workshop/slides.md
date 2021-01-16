@@ -36,6 +36,8 @@ layout: true
 
 1. "We are because we have to!"
 
+.bottomlink[[Create Poll](https://www.strawpoll.me/#?savedPoll=%7B%22title%22:%22Why%20are%20we%20doing%20automated%20testing?%22,%22dupcheck%22:%221%22,%22multi%22:true,%22captcha%22:false,%22options%22:%5B%22%2522We%2520have%2520to%2520reach%2520a%2520certain%2520coverage!%2522%22,%22%2522We%2520want%2520to%2520prevent%2520certain%2520bugs%2520from%2520happening%2520again!%2522%22,%22%2522We%2520want%2520to%2520be%2520sure%2520our%2520changes%2520don't%2520break%2520code%2520we%2520don't%2520know!%2522%22,%22%2522We%2520want%2520to%2520automatically%2520validate%2520all%2520possible%2520scenarios!%2522%22,%22%2522We%2520are%2520because%2520we%2520have%2520to!%2522%22%5D%7D)]
+
 ---
 
 # Testing Dimensions
