@@ -56,6 +56,14 @@ h3 {
   opacity: 0.5;
 }
 
+.fitv {
+  display: block;
+  text-align: center;
+}
+.fitv img {
+  height: 500px;
+}
+
 a,
 a:visited {
   color: #00f;
@@ -69,4 +77,14 @@ a:visited {
 h2 .icon img {
   height: 0.8em;
   vertical-align: middle;
+}
+
+table {
+  display: table !important;
+  width: 100%;
+}
+table.thirds th,
+table.thirds td {
+  display: table-cell;
+  width: 33%;
 }

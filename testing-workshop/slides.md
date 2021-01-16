@@ -16,6 +16,10 @@ layout: true
 
 - Motivation for Testing
 
+- Unit Testing
+
+- e2e Testing
+
 ---
 
 layout: true
@@ -40,4 +44,54 @@ layout: true
 
 ---
 
+class: center, middle
+
 # Testing Dimensions
+
+---
+
+# Testing Dimensions
+
+## Utilities
+
+<table class="thirds">
+  <tr>
+    <th>Framework</th>
+    <th>Test Runner</th>
+    <th>3rd party lib</th>
+  </tr>
+</table>
+
+--
+
+## Artifacts
+
+<table class="thirds">
+  <tr>
+    <th>Components</th>
+    <th>Services</th>
+    <th>State Management</th>
+  </tr>
+</table>
+
+--
+
+## Testing Concepts
+
+<table class="thirds">
+  <tr>
+    <th>Assertions</th>
+    <th>Mocking</th>
+    <th>Time</th>
+  </tr>
+</table>
+
+---
+
+# Testing Pyramid
+
+.fitv[
+![Test Pyramid](https://github.com/dhhyi/intershop-pwa/raw/workshop/testing/docs/concepts/testing-test-pyramid.jpg)
+]
+
+.bottomlink[[PWA Doku - Testing Concept - Different Levels of Testing](https://github.com/dhhyi/intershop-pwa/blob/workshop/testing/docs/concepts/testing.md#different-levels-of-testing)]
