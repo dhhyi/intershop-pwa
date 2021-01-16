@@ -37,6 +37,9 @@ h3 {
 .clean .remark-slide-number {
   display: none;
 }
+.clean .chapter {
+  display: none;
+}
 
 .chapter {
   position: absolute;
