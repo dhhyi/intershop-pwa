@@ -38,6 +38,15 @@ h3 {
   display: none;
 }
 
+.chapter {
+  position: absolute;
+  top: 0.5em;
+  right: 1em;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: xx-large;
+  opacity: 0.5;
+}
+
 a,
 a:visited {
   color: #00f;

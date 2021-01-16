@@ -6,9 +6,21 @@ class: center, middle, clean
 
 ---
 
+layout: true
+
+.chapter[Introduction]
+
+---
+
 # Workshop Contents
 
 - Motivation for Testing
+
+---
+
+layout: true
+
+.chapter[Motivation]
 
 ---
 
