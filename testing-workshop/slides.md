@@ -41,6 +41,52 @@ layout: true
 
 ---
 
+layout: true
+
+.chapter[Introduction]
+
+# /me
+
+---
+
+## Danilo Hoffmann
+
+- .icon[![Twitter](https://upload.wikimedia.org/wikipedia/de/9/9f/Twitter_bird_logo_2012.svg)
+  [@dhhyi](https://twitter.com/dhhyi)]
+
+- .icon[![GitHub](https://avatars3.githubusercontent.com/in/15368?s=256&v=2)
+  [dhhyi](https://github.com/dhhyi)]
+
+- strong opinions
+
+- not always right
+
+- open source
+
+.bottomlink[
+[#angular](https://twitter.com/search?q=%23angular)
+[#beer](https://twitter.com/search?q=%23beer)
+[#happyhardcore](https://twitter.com/search?q=%23happyhardcore)
+]
+
+---
+
+<iframe width="800" height="500" src="https://angular.schule/blog/2020-01-ngrx-data-views" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+
+.bottomlink[[NgRx Data Views: How to de-normalize entities for large enterprise applications](https://angular.schule/blog/2020-01-ngrx-data-views)]
+
+---
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/I14r3joLu9A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+.bottomlink[[ngLeipzig #36: Facades – The Best Layer of your Angular Application](https://www.youtube.com/watch?v=I14r3joLu9A&ab_channel=AngularLeipzigMeetup)]
+
+---
+
+layout: true
+
+---
+
 class: center, middle, clean
 
 # Motivation
@@ -81,11 +127,11 @@ class: center, middle
 
 ## Utilities
 
-<table class="thirds">
+<table class="thirds text-grey">
   <tr>
-    <th>Framework</th>
-    <th>Test Runner</th>
-    <th>3rd party lib</th>
+    <td>Framework</td>
+    <td>Test Runner</td>
+    <td>3rd party lib</td>
   </tr>
 </table>
 
@@ -93,11 +139,11 @@ class: center, middle
 
 ## Testing Concepts
 
-<table class="thirds">
+<table class="thirds text-grey">
   <tr>
-    <th>Assertions</th>
-    <th>Mocking</th>
-    <th>Time</th>
+    <td>Assertions</td>
+    <td>Mocking</td>
+    <td>Time</td>
   </tr>
 </table>
 
@@ -105,11 +151,11 @@ class: center, middle
 
 ## Artifacts
 
-<table class="thirds">
+<table class="thirds text-grey">
   <tr>
-    <th>Components</th>
-    <th>Services</th>
-    <th>State Management</th>
+    <td>Components</td>
+    <td>Services</td>
+    <td>State Management</td>
   </tr>
 </table>
 
@@ -122,3 +168,47 @@ class: center, middle
 ]
 
 .bottomlink[[PWA Doku - Testing Concept - Different Levels of Testing](https://github.com/dhhyi/intershop-pwa/blob/workshop/testing/docs/concepts/testing.md#different-levels-of-testing)]
+
+---
+
+# Testing Mantra
+
+- Test as early as possible
+
+- Test as
+
+---
+
+# General Structure of a Test
+
+```typescript
+describe('Test Artifact', () => {
+    beforeEach(() => {...})
+
+    it('should ...', () => {...})
+    ...
+
+    describe('method/scenario', () => {
+      beforeEach(() => {...})
+
+      it('should ...', () => {...})
+      ...
+    })
+})
+```
+
+---
+
+# Importance of independent Tests
+
+---
+
+# Requirements for Tests in the PWA
+
+- Tests should be easily adaptable for projects
+
+  - prefer unit over integration tests
+
+  - work with snapshots
+
+  - no css class selectors for Component tests

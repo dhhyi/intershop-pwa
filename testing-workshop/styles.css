@@ -91,3 +91,7 @@ table.thirds td {
   display: table-cell;
   width: 33%;
 }
+
+.text-grey {
+  color: #666;
+}
