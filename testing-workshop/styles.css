@@ -1,0 +1,54 @@
+body {
+  font-family: 'Droid Serif', serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: normal;
+}
+
+.remark-code,
+.remark-inline-code {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: x-large;
+}
+
+.remark-code-line-highlighted {
+  background-color: rgb(136 136 82 / 46%);
+}
+
+.remark-slide-content {
+  padding: 1em 2em 1em 2em;
+  font-size: xx-large;
+  background: rgb(129, 129, 129);
+  background: linear-gradient(
+    130deg,
+    rgba(129, 129, 129, 1) 0%,
+    rgba(214, 214, 223, 1) 13%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+.remark-slide-content .remark-slide-number {
+  font-size: large;
+}
+
+.clean .remark-slide-number {
+  display: none;
+}
+
+a,
+a:visited {
+  color: #00f;
+  text-decoration: none;
+}
+
+.icon img {
+  height: 1.2em;
+  vertical-align: middle;
+}
+h2 .icon img {
+  height: 0.8em;
+  vertical-align: middle;
+}
