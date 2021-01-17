@@ -4,6 +4,14 @@ class: center, middle, clean
 
 # Testing Workshop
 
+<br/>
+
+.center[
+
+<iframe width="300" height="300" src="https://www.youtube.com/embed/3_onGF67ecs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![catJam](https://cdn.betterttv.net/emote/5f25122965fe924464ef0133/3x)
+]
+
 ---
 
 layout: true
