@@ -95,3 +95,25 @@ table.thirds td {
 .text-grey {
   color: #666;
 }
+
+.notetoself {
+  color: #aaa;
+}
+
+blockquote p {
+  position: relative;
+  left: 50px;
+  width: 70%;
+  font-style: italic;
+}
+blockquote::before {
+  position: relative;
+  top: 60px;
+  display: block;
+  margin-right: 0.25em;
+  font-size: 2em;
+  line-height: 0.1em;
+  color: #ccc;
+  vertical-align: -0.4em;
+  content: open-quote;
+}

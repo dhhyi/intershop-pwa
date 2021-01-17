@@ -14,11 +14,13 @@ layout: true
 
 # Workshop Contents
 
-- Motivation for Testing
+- Why?
 
-- Unit Testing
+- unit Testing
 
 - e2e Testing
+
+.bottomlink[[[Wikipedia] Workshop](https://de.wikipedia.org/wiki/Workshop)]
 
 ---
 
@@ -37,7 +39,12 @@ layout: true
 --
 
 - Why are we not recording? 📹
+
 - Goal: Knowledge 💡 + Documentation 📜
+
+--
+
+- Entertainment! 🍿
 
 ---
 
@@ -92,6 +99,8 @@ class: center, middle, clean
 # Motivation
 
 # 🏆
+
+.notetoself[...about testing]
 
 ---
 
@@ -171,11 +180,45 @@ class: center, middle
 
 ---
 
+class: center, middle
+
 # Testing Mantra
 
-- Test as early as possible
+.bottomlink[[[Wikipedia] Mantra](https://en.wikipedia.org/wiki/Mantra)]
 
-- Test as
+---
+
+# Testing Mantra
+
+> Tests are like toilet paper
+
+--
+
+- "It's good to have before you need it!"
+
+--
+
+- "Throw it away after use!"
+
+---
+
+# Testing Mantra
+
+- easy to write
+
+- readable!!
+
+- purposed for intermediate use
+
+- disposable
+
+---
+
+# Testing Mantra
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/wPFt8bJuBD4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+.bottomlink[[Sinnlos Telefon - Herr Weber und das Klopapier](https://www.youtube.com/watch?v=wPFt8bJuBD4&ab_channel=AngularLeipzigMeetup)]
 
 ---
 
