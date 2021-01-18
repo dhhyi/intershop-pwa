@@ -500,6 +500,42 @@ class: center, middle
 
 ---
 
+layout: true
+
+.chapter[Unit Testing]
+
+---
+
+# Part #2
+
+- Angular
+
+  - TestBed
+
+- ts-mockito
+
+<br/>
+
+→ Testing HTTP Service
+
+---
+
+layout: true
+
+.chapter[Unit Testing - Part #2]
+
+---
+
+class: center, middle
+
+# Coding Time
+
+## Testing HTTP Service
+
+.notetoself[cms.service]
+
+---
+
 # Requirements for Tests in the PWA
 
 - Tests should be easily adaptable for projects
