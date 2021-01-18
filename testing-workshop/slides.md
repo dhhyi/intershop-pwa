@@ -136,6 +136,58 @@ layout: true
 
 class: center, middle
 
+# Testing Mantra
+
+.bottomlink[[[Wikipedia] Mantra](https://en.wikipedia.org/wiki/Mantra)]
+
+---
+
+# Testing Mantra
+
+> Tests are like toilet paper
+
+--
+
+- "It's good to have before you need it!"
+
+--
+
+- "There's no need for hoarding!"
+
+--
+
+- "Throw away if unreliable!"
+
+--
+
+- "Throw away after use!"
+
+---
+
+# Testing Mantra
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/wPFt8bJuBD4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+.bottomlink[[Sinnlos Telefon - Herr Weber und das Klopapier](https://www.youtube.com/watch?v=wPFt8bJuBD4&ab_channel=AngularLeipzigMeetup)]
+
+---
+
+# Testing Mantra
+
+Tests are / should be ...
+
+- easy to write
+
+- readable!!
+
+- purposed for intermediate use
+
+- disposable
+
+---
+
+class: center, middle
+
 # Testing Dimensions
 
 ---
@@ -188,69 +240,263 @@ class: center, middle
 
 ---
 
+layout: true
+
+---
+
 class: center, middle
 
-# Testing Mantra
-
-.bottomlink[[[Wikipedia] Mantra](https://en.wikipedia.org/wiki/Mantra)]
+# Unit Testing
 
 ---
 
-# Testing Mantra
+layout: true
 
-> Tests are like toilet paper
-
---
-
-- "It's good to have before you need it!"
-
---
-
-- "Throw it away after use!"
+.chapter[Unit Testing]
 
 ---
 
-# Testing Mantra
+# Part #1
 
-- easy to write
+- jest
 
-- readable!!
+  - Test Structure
 
-- purposed for intermediate use
+  - Assertions
 
-- disposable
+  - Snapshots
 
----
+  - Parameterized Tests
 
-# Testing Mantra
+<br/>
 
-<iframe width="800" height="500" src="https://www.youtube.com/embed/wPFt8bJuBD4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-.bottomlink[[Sinnlos Telefon - Herr Weber und das Klopapier](https://www.youtube.com/watch?v=wPFt8bJuBD4&ab_channel=AngularLeipzigMeetup)]
+→ Testing Utility Method
 
 ---
 
-# General Structure of a Test
+layout: true
+
+.chapter[Unit Testing - Part #1]
+
+---
+
+# jest
+
+.bottomlink[[PWA Doku - Deviation from Standard Angular Test Frameworks](https://github.com/dhhyi/intershop-pwa/blob/workshop/testing/docs/concepts/testing.md#deviation-from-standard-angular-test-frameworks)]
+
+- Test Runner
+
+- not standard Angular (Karma)
+
+- runs on virtual DOM
+
+- [Rich CLI](https://jestjs.io/docs/en/cli)
+
+---
+
+layout: true
+
+.chapter[Unit Testing - Part #1]
+
+# General Structure of a jest Test
+
+.bottomlink[[Jest - Test Setup](https://jestjs.io/docs/en/setup-teardown)]
+
+---
 
 ```typescript
 describe('Test Artifact', () => {
-    beforeEach(() => {...})
-
-    it('should ...', () => {...})
-    ...
-
-    describe('method/scenario', () => {
-      beforeEach(() => {...})
-
-      it('should ...', () => {...})
-      ...
-    })
-})
+  ...
+});
 ```
 
 ---
 
-# Importance of independent Tests
+```typescript
+describe('Test Artifact', () => {
+  beforeEach(() => {...});
+
+  it('should ...', () => {...});
+  ...
+
+  afterEach(() => {...});
+});
+```
+
+---
+
+```typescript
+describe('Test Artifact', () => {
+  beforeEach(() => {...});
+
+  it('should ...', () => {...});
+  ...
+
+  describe('method/scenario', () => {
+    beforeEach(() => {...});
+
+    it('should ...', () => {...});
+    ...
+  });
+});
+```
+
+---
+
+```typescript
+describe('Test Artifact', () => {
+  beforeEach(() => {...});
+
+  it('should ...', () => {...});
+  ...
+});
+
+describe('Test Artifact', () => {
+  beforeEach(() => {...});
+
+  it('should ...', () => {...});
+  ...
+});
+```
+
+---
+
+layout: true
+
+.chapter[Unit Testing - Part #1]
+
+# Importance of Independent Tests
+
+.bottomlink[[PWA - Guide Jest - Be Careful With Variable Initialization](https://github.com/dhhyi/intershop-pwa/blob/workshop/testing/docs/guides/testing-jest.md#be-careful-with-variable-initialization)]
+
+---
+
+```typescript
+describe('...', () => {
+  let a = true; // initialized just once
+  const b = true; // immutable value
+  let c; // re-initialized in beforeEach
+
+  beforeEach(() => {
+    c = true;
+  });
+
+  it('test1', () => {
+    a = false;
+    // b = false; not possible
+    c = false;
+  });
+
+  it('test2', () => {
+    // a is still false
+    // c is back to true
+  });
+});
+```
+
+---
+
+```typescript
+describe('...', () => {
+  let a: any;
+  const b = { value: true };
+
+  beforeEach(() => {
+    a = { value: true };
+  });
+
+  it('test1', () => {
+    a.value = false;
+    b.value = false;
+  });
+
+  it('test2', () => {
+    // a.value is back to true
+    // b.value is still false
+  });
+});
+```
+
+---
+
+layout: true
+
+.chapter[Unit Testing - Part #1]
+
+---
+
+# jest Assertions
+
+- [Matchers](https://jestjs.io/docs/en/using-matchers)
+
+  `expect(obj).toEqual(...)`
+
+  `expect(obj).toBeTruthy()`
+
+  `expect(() => fn()).toThrow()`
+
+  `expect(() => fn()).toThrowError(string | Regexp | Error)`
+
+- [jest-extended](https://github.com/jest-community/jest-extended)
+
+  `expect(obj).toBeTrue()`
+
+  `expect(arr).toIncludeAllMembers([members])`
+
+---
+
+# jest Snapshots
+
+- `expect(obj).toMatchSnapshot(...)`
+
+  Snapshot will be written in parallel file.
+
+- `expect(obj).toMatchInlineSnapshot(...)`
+
+  Snapshot inline.
+
+- `expect(() => fn()).toThrowErrorMatchingInlineSnapshot(...)`
+
+---
+
+# jest Snapshots - Custom Serializer
+
+```typescript
+expect.addSnapshotSerializer({
+  test(x: unknown): boolean;
+  print(x: unknown): string;
+})
+```
+
+.bottomlink[[Snapshots](https://jestjs.io/docs/en/snapshot-testing)]
+
+---
+
+# Parameterized Tests
+
+`it('description', () => {...});`
+
+`it.each(table)('description', (args) => {...});`
+
+Examples:
+
+- [date.pipe.spec.ts](https://github.com/dhhyi/intershop-pwa/blob/workshop/testing/src/app/core/pipes/date.pipe.spec.ts)
+
+- [attribute.pipe.spec](https://github.com/dhhyi/intershop-pwa/blob/workshop/testing/src/app/core/models/attribute/attribute.pipe.spec.ts)
+
+- [product.helper.spec](https://github.com/dhhyi/intershop-pwa/blob/workshop/testing/src/app/core/models/product/product.helper.spec.ts)
+
+.bottomlink[[Jest - test.each](https://jestjs.io/docs/en/api#testeachtablename-fn-timeout)]
+
+---
+
+class: center, middle
+
+# Coding Time
+
+## Testing Utility Methods
+
+.notetoself[price.helper]
 
 ---
 
