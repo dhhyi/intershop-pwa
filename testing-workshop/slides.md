@@ -461,12 +461,16 @@ layout: true
 
 # jest Snapshots - Custom Serializer
 
+- local serializer
+
 ```typescript
 expect.addSnapshotSerializer({
   test(x: unknown): boolean;
   print(x: unknown): string;
 })
 ```
+
+- global serializer
 
 .bottomlink[[Snapshots](https://jestjs.io/docs/en/snapshot-testing)]
 
@@ -514,6 +518,8 @@ layout: true
 
 - ts-mockito
 
+  - mocks
+
 <br/>
 
 → Testing HTTP Service
@@ -523,6 +529,53 @@ layout: true
 layout: true
 
 .chapter[Unit Testing - Part #2]
+
+---
+
+# Angular TestBed
+
+- ignores [application modules](https://github.com/dhhyi/intershop-pwa/blob/workshop/testing/docs/concepts/project-structure.md#modules)
+
+- provides a special test module for the unit under test
+
+- enables / uses dependency injection
+
+- `@Injectable({ providedIn: 'root' })` <br/>
+  services are automatically available
+
+- [`TestBed.configureTestingModule`](https://angular.io/api/core/testing/TestBed#configureTestingModule)`({ imports: any[], declarations: any[], providers: any[] })`
+
+.bottomlink[[Angular - Testing Services](https://angular.io/guide/testing-services#angular-testbed)]
+
+---
+
+class: center, middle
+
+# What is "Dependency Injection"?
+
+---
+
+# ts-mockito Mocks
+
+.bottomlink[[GitHub - ts-mockito](https://github.com/NagRock/ts-mockito#main-features)]
+
+- used to only test "units" in unit tests
+
+- provides cleaner interface than jest mocking
+
+--
+
+- use `mock` to create mock
+
+- use `instance` to instantiate mock
+
+  `{ provide: MyService; useFactory: () => instance(mock(MyService)) }`
+
+--
+
+- use `verify` to check calls
+
+- use `capture` to check arguments
 
 ---
 
