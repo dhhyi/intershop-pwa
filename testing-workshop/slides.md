@@ -112,7 +112,7 @@ class: center, middle, clean
 
 # Motivation
 
-# 🏆
+## 🏆
 
 .notetoself[...about testing]
 
@@ -268,7 +268,7 @@ layout: true
 
 ---
 
-# Part #1
+# Part #1 → Testing Utility Method
 
 - jest
 
@@ -279,10 +279,6 @@ layout: true
   - Snapshots
 
   - Parameterized Tests
-
-<br/>
-
-→ Testing Utility Method
 
 ---
 
@@ -526,7 +522,7 @@ layout: true
 
 ---
 
-# Part #2
+# Part #2 → Testing HTTP Service
 
 - Angular
 
@@ -535,10 +531,6 @@ layout: true
 - ts-mockito
 
   - mocks
-
-<br/>
-
-→ Testing HTTP Service
 
 ---
 
@@ -613,7 +605,7 @@ layout: true
 
 ---
 
-# Part #3
+# Part #3 → Testing with mocked Store
 
 - NgRx
 
@@ -622,10 +614,6 @@ layout: true
 - ts-mockito
 
   - Spies
-
-<br/>
-
-→ Testing with mocked Store
 
 ---
 
@@ -678,7 +666,7 @@ layout: true
 
 ---
 
-# Part #4
+# Part #4 → Testing Angular Components
 
 - Special Requirements for Intershop PWA
 
@@ -691,9 +679,6 @@ layout: true
 - ng-mocks
 
 - `findAllCustomElements` & `findAllDataTestingIDs`
-
-<br/>
-→ Testing Angular Components
 
 ---
 
@@ -789,17 +774,13 @@ layout: true
 
 ---
 
-# Part #5
+# Part #5 → Testing with real Store
 
 - `XStoreModule.forTesting`
 
 - `StoreWithSnapshots`
 
 - `provideStoreSnapshots()`
-
-<br/>
-
-→ Testing with real Store
 
 ---
 
