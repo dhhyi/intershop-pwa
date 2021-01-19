@@ -30,6 +30,7 @@ layout: true
   2. HTTP Service
   3. Testing with mocked Store
   4. Angular Components
+  5. Testing with real Store
 
 - e2e Testing
 
@@ -483,6 +484,10 @@ expect.addSnapshotSerializer({
 
 - global serializer
 
+  - [category-tree.helper.spec.ts](https://github.com/dhhyi/intershop-pwa/blob/workshop/testing/src/app/core/models/category-tree/category-tree.helper.spec.ts)
+
+  - [shopping-store.spec.ts](https://github.com/dhhyi/intershop-pwa/blob/workshop/testing/src/app/core/store/shopping/shopping-store.spec.ts)
+
 .bottomlink[[Snapshots](https://jestjs.io/docs/en/snapshot-testing)]
 
 ---
@@ -775,3 +780,35 @@ class: center, middle
 ## Testing Angular Components
 
 .notetoself[recently-viewed.component]
+
+---
+
+layout: true
+
+.chapter[Unit Testing]
+
+---
+
+# Part #5
+
+- `StoreWithSnapshots` & `provideStoreSnapshots`
+
+<br/>
+
+→ Testing with real Store
+
+---
+
+layout: true
+
+.chapter[Unit Testing - Part #5]
+
+---
+
+class: center, middle
+
+# Coding Time
+
+## Testing with real Store
+
+.notetoself[shopping.facade]
