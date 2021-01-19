@@ -791,7 +791,11 @@ layout: true
 
 # Part #5
 
-- `StoreWithSnapshots` & `provideStoreSnapshots`
+- `XStoreModule.forTesting`
+
+- `StoreWithSnapshots`
+
+- `provideStoreSnapshots()`
 
 <br/>
 
@@ -805,10 +809,22 @@ layout: true
 
 ---
 
+# Custom Implementation
+
+- [`CoreStoreModule.forTesting`](https://github.com/dhhyi/intershop-pwa/blob/workshop/testing/src/app/core/store/core/core-store.module.ts#L60)
+
+- [`FeatureStoreModule.forTesting`](https://github.com/dhhyi/intershop-pwa/blob/workshop/testing/src/app/core/store/shopping/shopping-store.module.ts#L50)
+
+- inject `StoreWithSnapshots` & provide `provideStoreSnapshots()` from [`ngrx-testing.ts`](https://github.com/dhhyi/intershop-pwa/blob/workshop/testing/src/app/core/utils/dev/ngrx-testing.ts)
+
+---
+
 class: center, middle
 
 # Coding Time
 
 ## Testing with real Store
 
-.notetoself[shopping.facade]
+.notetoself[shopping.facade] <br/>
+.notetoself[product.selectors.spec] <br/>
+.notetoself[shopping-store.spec]
