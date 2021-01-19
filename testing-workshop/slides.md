@@ -28,8 +28,8 @@ layout: true
 
   1. Utility Method
   2. HTTP Service
-  3. Testing with mocked Store
-  4. Angular Components
+  3. Angular Components
+  4. Testing with mocked Store
   5. Testing with real Store
 
 - e2e Testing
@@ -605,68 +605,7 @@ layout: true
 
 ---
 
-# Part #3 → Testing with mocked Store
-
-- NgRx
-
-  - MockStore
-
-- ts-mockito
-
-  - Spies
-
----
-
-layout: true
-
-.chapter[Unit Testing - Part #3]
-
----
-
-# NgRx MockStore
-
-.bottomlink[[NgRX - Testing](https://ngrx.io/guide/store/testing#using-a-mock-store)]
-
-- relatively new feature
-
-- use `provideMockStore` as TestBed provider
-
-- inject `MockStore`
-
-- use `MockStore.overrideSelector`
-
----
-
-# ts-mockito Spies
-
-.bottomlink[[GitHub - ts-mockito](https://github.com/NagRock/ts-mockito#main-features)]
-
-- use `spy` to create spy
-
-- use `verify` to check calls
-
-- use `capture` to check arguments
-
----
-
-class: center, middle
-
-# Coding Time
-
-## Testing with mocked Store
-
-.notetoself[server-config.effects] <br/>
-.notetoself[account.facade]
-
----
-
-layout: true
-
-.chapter[Unit Testing]
-
----
-
-# Part #4 → Testing Angular Components
+# Part #3 → Testing Angular Components
 
 - Special Requirements for Intershop PWA
 
@@ -684,7 +623,7 @@ layout: true
 
 layout: true
 
-.chapter[Unit Testing - Part #4]
+.chapter[Unit Testing - Part #3]
 
 ---
 
@@ -765,6 +704,67 @@ class: center, middle
 ## Testing Angular Components
 
 .notetoself[recently-viewed.component]
+
+---
+
+layout: true
+
+.chapter[Unit Testing]
+
+---
+
+# Part #4 → Testing with mocked Store
+
+- NgRx
+
+  - MockStore
+
+- ts-mockito
+
+  - Spies
+
+---
+
+layout: true
+
+.chapter[Unit Testing - Part #4]
+
+---
+
+# NgRx MockStore
+
+.bottomlink[[NgRX - Testing](https://ngrx.io/guide/store/testing#using-a-mock-store)]
+
+- relatively new feature
+
+- use `provideMockStore` as TestBed provider
+
+- inject `MockStore`
+
+- use `MockStore.overrideSelector`
+
+---
+
+# ts-mockito Spies
+
+.bottomlink[[GitHub - ts-mockito](https://github.com/NagRock/ts-mockito#main-features)]
+
+- use `spy` to create spy
+
+- use `verify` to check calls
+
+- use `capture` to check arguments
+
+---
+
+class: center, middle
+
+# Coding Time
+
+## Testing with mocked Store
+
+.notetoself[server-config.effects] <br/>
+.notetoself[account.facade]
 
 ---
 
