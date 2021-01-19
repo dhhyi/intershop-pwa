@@ -20,17 +20,21 @@ layout: true
 
 ---
 
+name: agenda
+
 # Workshop Contents
 
 - Why?
 
 - unit Testing
 
-  1. Utility Method
-  2. HTTP Service
-  3. Testing with mocked Store
-  4. Angular Components
-  5. Testing with real Store
+  1. [Utility Method](#part1)
+  2. [HTTP Service](#part2)
+  3. [Angular Components](#part3)
+  4. [Mocked Store](#part4)
+  5. [Real Store](#part5)
+  6. [Angular Router](#part6)
+  7. [Observables](#part7)
 
 - e2e Testing
 
@@ -112,7 +116,7 @@ class: center, middle, clean
 
 # Motivation
 
-# 🏆
+## 🏆
 
 .notetoself[...about testing]
 
@@ -124,7 +128,7 @@ layout: true
 
 ---
 
-# Why are we doing automated testing?
+## Why are we doing automated testing?
 
 1. "We have to reach a certain coverage!"
 
@@ -140,7 +144,7 @@ layout: true
 
 ---
 
-# Confusion Matrix
+## Confusion Matrix
 
 .fitv[![Confusion Matrix](https://miro.medium.com/max/2102/1*fxiTNIgOyvAombPJx5KGeA.png)]
 
@@ -148,13 +152,13 @@ layout: true
 
 class: center, middle
 
-# Testing Mantra
+## Testing Mantra
 
 .bottomlink[[[Wikipedia] Mantra](https://en.wikipedia.org/wiki/Mantra)]
 
 ---
 
-# Testing Mantra
+## Testing Mantra
 
 > Tests are like toilet paper
 
@@ -176,7 +180,7 @@ class: center, middle
 
 ---
 
-# Testing Mantra
+## Testing Mantra
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/wPFt8bJuBD4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -184,7 +188,7 @@ class: center, middle
 
 ---
 
-# Testing Mantra
+## Testing Mantra
 
 Tests are / should be ...
 
@@ -200,13 +204,13 @@ Tests are / should be ...
 
 class: center, middle
 
-# Testing Dimensions
+## Testing Dimensions
 
 ---
 
-# Testing Dimensions
+## Testing Dimensions
 
-## Utilities
+### Utilities
 
 <table class="thirds text-grey">
   <tr>
@@ -218,7 +222,7 @@ class: center, middle
 
 --
 
-## Testing Concepts
+### Testing Concepts
 
 <table class="thirds text-grey">
   <tr>
@@ -230,7 +234,7 @@ class: center, middle
 
 --
 
-## Artifacts
+### Artifacts
 
 <table class="thirds text-grey">
   <tr>
@@ -242,7 +246,7 @@ class: center, middle
 
 ---
 
-# Testing Pyramid
+## Testing Pyramid
 
 .fitv[
 ![Test Pyramid](https://github.com/dhhyi/intershop-pwa/raw/workshop/testing/docs/concepts/testing-test-pyramid.jpg)
@@ -258,17 +262,21 @@ layout: true
 
 class: center, middle
 
-# Unit Testing
+## Unit Testing
 
 ---
 
+name: unit-testing-part-template
 layout: true
 
-.chapter[Unit Testing]
+.chapter[[Unit Testing](#agenda)]
 
 ---
 
-# Part #1
+name: part1
+template: unit-testing-part-template
+
+# Part #1 → Testing Utility Methods
 
 - jest
 
@@ -280,10 +288,6 @@ layout: true
 
   - Parameterized Tests
 
-<br/>
-
-→ Testing Utility Method
-
 ---
 
 layout: true
@@ -292,7 +296,7 @@ layout: true
 
 ---
 
-# jest
+## jest
 
 .bottomlink[[PWA Doku - Deviation from Standard Angular Test Frameworks](https://github.com/dhhyi/intershop-pwa/blob/workshop/testing/docs/concepts/testing.md#deviation-from-standard-angular-test-frameworks)]
 
@@ -310,7 +314,7 @@ layout: true
 
 .chapter[Unit Testing - Part #1]
 
-# General Structure of a jest Test
+## General Structure of a jest Test
 
 .bottomlink[[Jest - Test Setup](https://jestjs.io/docs/en/setup-teardown)]
 
@@ -377,7 +381,7 @@ layout: true
 
 .chapter[Unit Testing - Part #1]
 
-# Importance of Independent Tests
+## Importance of Independent Tests
 
 .bottomlink[[PWA - Guide Jest - Be Careful With Variable Initialization](https://github.com/dhhyi/intershop-pwa/blob/workshop/testing/docs/guides/testing-jest.md#be-careful-with-variable-initialization)]
 
@@ -437,7 +441,7 @@ layout: true
 
 ---
 
-# jest Assertions
+## jest Assertions
 
 - [Matchers](https://jestjs.io/docs/en/using-matchers)
 
@@ -457,7 +461,7 @@ layout: true
 
 ---
 
-# jest Snapshots
+## jest Snapshots
 
 - `expect(obj).toMatchSnapshot(...)`
 
@@ -471,7 +475,7 @@ layout: true
 
 ---
 
-# jest Snapshots - Custom Serializer
+## jest Snapshots - Custom Serializer
 
 - local serializer
 
@@ -492,7 +496,7 @@ expect.addSnapshotSerializer({
 
 ---
 
-# Parameterized Tests
+## Parameterized Tests
 
 `it('description', () => {...});`
 
@@ -512,21 +516,18 @@ Examples:
 
 class: center, middle
 
-# Coding Time
+## Coding Time
 
-## Testing Utility Methods
+### Testing Utility Methods
 
 .notetoself[price.helper]
 
 ---
 
-layout: true
+name: part2
+template: unit-testing-part-template
 
-.chapter[Unit Testing]
-
----
-
-# Part #2
+# Part #2 → Testing HTTP Services
 
 - Angular
 
@@ -536,10 +537,6 @@ layout: true
 
   - mocks
 
-<br/>
-
-→ Testing HTTP Service
-
 ---
 
 layout: true
@@ -548,7 +545,7 @@ layout: true
 
 ---
 
-# Angular TestBed
+## Angular TestBed
 
 - ignores [application modules](https://github.com/dhhyi/intershop-pwa/blob/workshop/testing/docs/concepts/project-structure.md#modules)
 
@@ -569,11 +566,11 @@ layout: true
 
 class: center, middle
 
-# What is "Dependency Injection"?
+## What is "Dependency Injection"?
 
 ---
 
-# ts-mockito Mocks
+## ts-mockito Mocks
 
 .bottomlink[[GitHub - ts-mockito](https://github.com/NagRock/ts-mockito#main-features)]
 
@@ -599,86 +596,18 @@ class: center, middle
 
 class: center, middle
 
-# Coding Time
+## Coding Time
 
-## Testing HTTP Service
+### Testing HTTP Service
 
 .notetoself[cms.service]
 
 ---
 
-layout: true
+name: part3
+template: unit-testing-part-template
 
-.chapter[Unit Testing]
-
----
-
-# Part #3
-
-- NgRx
-
-  - MockStore
-
-- ts-mockito
-
-  - Spies
-
-<br/>
-
-→ Testing with mocked Store
-
----
-
-layout: true
-
-.chapter[Unit Testing - Part #3]
-
----
-
-# NgRx MockStore
-
-.bottomlink[[NgRX - Testing](https://ngrx.io/guide/store/testing#using-a-mock-store)]
-
-- relatively new feature
-
-- use `provideMockStore` as TestBed provider
-
-- inject `MockStore`
-
-- use `MockStore.overrideSelector`
-
----
-
-# ts-mockito Spies
-
-.bottomlink[[GitHub - ts-mockito](https://github.com/NagRock/ts-mockito#main-features)]
-
-- use `spy` to create spy
-
-- use `verify` to check calls
-
-- use `capture` to check arguments
-
----
-
-class: center, middle
-
-# Coding Time
-
-## Testing with mocked Store
-
-.notetoself[server-config.effects] <br/>
-.notetoself[account.facade]
-
----
-
-layout: true
-
-.chapter[Unit Testing]
-
----
-
-# Part #4
+# Part #3 → Testing Angular Components
 
 - Special Requirements for Intershop PWA
 
@@ -692,18 +621,15 @@ layout: true
 
 - `findAllCustomElements` & `findAllDataTestingIDs`
 
-<br/>
-→ Testing Angular Components
-
 ---
 
 layout: true
 
-.chapter[Unit Testing - Part #4]
+.chapter[Unit Testing - Part #3]
 
 ---
 
-# Requirements for Tests in the PWA
+## Requirements for Tests in the PWA
 
 - Tests should be easily adaptable for projects
 
@@ -719,7 +645,7 @@ layout: true
 
 ---
 
-# Angular TestBed
+## Angular TestBed
 
 - [`TestBed.configureTestingModule`](https://angular.io/api/core/testing/TestBed#configureTestingModule)`({ declarations: [Type<T>] })`
 
@@ -737,7 +663,7 @@ layout: true
 
 ---
 
-# Retrieving Elements
+## Retrieving Elements
 
 - [`Element.querySelector`](https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector)
 
@@ -751,7 +677,7 @@ layout: true
 
 ---
 
-# ng-mocks
+## ng-mocks
 
 .bottomlink[[GitHub - ng-mocks](https://ng-mocks.sudo.eu/)]
 
@@ -763,7 +689,7 @@ layout: true
 
 ---
 
-# Custom ISH PWA Helpers
+## Custom ISH PWA Helpers
 
 - `findAllCustomElements(el: HTMLElement): string[]`
 
@@ -775,31 +701,82 @@ layout: true
 
 class: center, middle
 
-# Coding Time
+## Coding Time
 
-## Testing Angular Components
+### Testing Angular Components
 
 .notetoself[recently-viewed.component]
 
 ---
 
-layout: true
+name: part4
+template: unit-testing-part-template
 
-.chapter[Unit Testing]
+# Part #4 → Testing with mocked Store
+
+- NgRx
+
+  - MockStore
+
+- ts-mockito
+
+  - Spies
 
 ---
 
-# Part #5
+layout: true
+
+.chapter[Unit Testing - Part #4]
+
+---
+
+## NgRx MockStore
+
+.bottomlink[[NgRX - Testing](https://ngrx.io/guide/store/testing#using-a-mock-store)]
+
+- relatively new feature
+
+- use `provideMockStore` as TestBed provider
+
+- inject `MockStore`
+
+- use `MockStore.overrideSelector`
+
+---
+
+## ts-mockito Spies
+
+.bottomlink[[GitHub - ts-mockito](https://github.com/NagRock/ts-mockito#main-features)]
+
+- use `spy` to create spy
+
+- use `verify` to check calls
+
+- use `capture` to check arguments
+
+---
+
+class: center, middle
+
+## Coding Time
+
+### Testing with mocked Store
+
+.notetoself[server-config.effects] <br/>
+.notetoself[account.facade]
+
+---
+
+name: part5
+template: unit-testing-part-template
+
+# Part #5 → Testing with real Store
 
 - `XStoreModule.forTesting`
 
 - `StoreWithSnapshots`
 
 - `provideStoreSnapshots()`
-
-<br/>
-
-→ Testing with real Store
 
 ---
 
@@ -809,7 +786,7 @@ layout: true
 
 ---
 
-# Custom Implementation
+## Custom Implementation
 
 - [`CoreStoreModule.forTesting`](https://github.com/dhhyi/intershop-pwa/blob/workshop/testing/src/app/core/store/core/core-store.module.ts#L60)
 
@@ -821,10 +798,77 @@ layout: true
 
 class: center, middle
 
-# Coding Time
+## Coding Time
 
-## Testing with real Store
+### Testing with real Store
 
 .notetoself[shopping.facade] <br/>
-.notetoself[product.selectors.spec] <br/>
+.notetoself[products.selectors.spec] <br/>
+.notetoself[products.effects.spec] <br/>
 .notetoself[shopping-store.spec]
+
+---
+
+name: part6
+template: unit-testing-part-template
+
+# Part #6 → Testing with Angular Router
+
+- Angular
+
+  - `RouterTestingModule.withRoutes`
+
+  - `fakeAsync` & `tick`
+
+- Custom
+
+  - Testing with Router Store
+
+---
+
+layout: true
+
+.chapter[Unit Testing - Part #6]
+
+---
+
+class: center, middle
+
+## Coding Time
+
+### Testing with Router
+
+.notetoself[TODO] <br/>
+
+---
+
+name: part7
+template: unit-testing-part-template
+
+# Part #7 → Testing Observables
+
+- Marbles
+
+- jest
+
+  - `done`
+
+  - virtual time
+
+  - real time
+
+---
+
+layout: true
+
+.chapter[Unit Testing - Part #7]
+
+---
+
+class: center, middle
+
+## Coding Time
+
+### Testing Observables
+
+.notetoself[TODO] <br/>
