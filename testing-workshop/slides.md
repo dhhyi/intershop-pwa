@@ -35,10 +35,9 @@ name: agenda
   5. [Real Store](#part5)
   6. [Angular Router](#part6)
   7. [Observables](#part7)
+  8. [Angular HttpClient](#part8)
 
 - e2e Testing
-
-.bottomlink[[[Wikipedia] Workshop](https://de.wikipedia.org/wiki/Workshop)]
 
 ---
 
@@ -872,3 +871,28 @@ class: center, middle
 ### Testing Observables
 
 .notetoself[TODO] <br/>
+
+---
+
+name: part8
+template: unit-testing-part-template
+
+# Part #8 → Testing Angular HttpClient
+
+- HttpClientTestingModule
+
+---
+
+layout: true
+
+.chapter[Unit Testing - Part #8]
+
+---
+
+class: center, middle
+
+## Coding Time
+
+### Testing Angular HttpClient
+
+.notetoself[tacton-self-service-api.service.ts] <br/>
