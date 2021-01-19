@@ -675,22 +675,19 @@ layout: true
 
 # Part #4
 
+- Special Requirements for Intershop PWA
+
 - Angular
 
   - TestBed
 
-  - element.querySelector
+  - Retrieving HTML Elements
 
 - ng-mocks
 
-- ISH PWA
-
-  - findAllCustomElements
-
-  - findAllDataTestingIDs
+- `findAllCustomElements` & `findAllDataTestingIDs`
 
 <br/>
-
 → Testing Angular Components
 
 ---
@@ -698,20 +695,6 @@ layout: true
 layout: true
 
 .chapter[Unit Testing - Part #4]
-
----
-
-# Angular TestBed
-
----
-
-class: center, middle
-
-# Coding Time
-
-## Testing Angular Components
-
-.notetoself[recently-viewed.component]
 
 ---
 
@@ -724,3 +707,71 @@ class: center, middle
   - work with snapshots
 
   - no css class selectors for Component tests
+
+  - best work with `data-testing-id` and Component Selectors
+
+.bottomlink[[PWA Customization Guide](https://github.com/dhhyi/intershop-pwa/blob/workshop/testing/docs/guides/customizations.md#customization-guide)]
+
+---
+
+# Angular TestBed
+
+- [`TestBed.configureTestingModule`](https://angular.io/api/core/testing/TestBed#configureTestingModule)`({ declarations: [Type<T>] })`
+
+- [`TestBed.compileComponents`](https://angular.io/api/core/testing/TestBed#compileComponents)`: Promise<any>`
+
+- [`TestBed.createComponent`](https://angular.io/api/core/testing/TestBed#createComponent)`(Type<T>): `[` ComponentFixture<T>`](https://angular.io/api/core/testing/ComponentFixture)
+
+--
+
+- [`ComponentFixture<T>.componentInstance`](https://angular.io/api/core/testing/ComponentFixture#componentInstance)`: T`
+
+- [`ComponentFixture<T>.nativeElement`](https://angular.io/api/core/testing/ComponentFixture#nativeElement)`: any` -- `HTMLElement`
+
+- [`ComponentFixture<T>.detectChanges()`](https://angular.io/api/core/testing/ComponentFixture#detectChanges)`: void`
+
+---
+
+# Retrieving Elements
+
+- [`Element.querySelector`](https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector)
+
+- [`Element.querySelectorAll`](https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll)
+
+--
+
+- [`ComponentFixture<T>.debugElement`](https://angular.io/api/core/testing/ComponentFixture#debugElement)`: `[`DebugElement`](https://angular.io/api/core/DebugElement)
+
+- `fixture.debugElement.queryAll(By.css('selector'));`
+
+---
+
+# ng-mocks
+
+.bottomlink[[GitHub - ng-mocks](https://ng-mocks.sudo.eu/)]
+
+- [`MockComponent`](https://ng-mocks.sudo.eu/api/MockComponent)
+
+- [`MockDirective`](https://ng-mocks.sudo.eu/api/MockDirective)
+
+- [`MockPipe`](https://ng-mocks.sudo.eu/api/MockPipe)
+
+---
+
+# Custom ISH PWA Helpers
+
+- `findAllCustomElements(el: HTMLElement): string[]`
+
+- `findAllDataTestingIDs(fixture: ComponentFixture<unknown>): string[]`
+
+.bottomlink[[PWA - `src/app/core/utils/dev/html-query-utils.ts`](https://github.com/dhhyi/intershop-pwa/blob/workshop/testing/src/app/core/utils/dev/html-query-utils.ts)]
+
+---
+
+class: center, middle
+
+# Coding Time
+
+## Testing Angular Components
+
+.notetoself[recently-viewed.component]
