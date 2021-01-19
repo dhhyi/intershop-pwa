@@ -26,6 +26,10 @@ layout: true
 
 - unit Testing
 
+  1. Utility Method
+  2. HTTP Service
+  3. Testing with mocked Store
+
 - e2e Testing
 
 .bottomlink[[[Wikipedia] Workshop](https://de.wikipedia.org/wiki/Workshop)]
@@ -545,6 +549,8 @@ layout: true
 
 - [`TestBed.configureTestingModule`](https://angular.io/api/core/testing/TestBed#configureTestingModule)`({ imports: any[], declarations: any[], providers: any[] })`
 
+- [`TestBed.inject`](https://angular.io/api/core/testing/TestBed#inject)`(Type | InjectionToken)`
+
 .bottomlink[[Angular - Testing Services](https://angular.io/guide/testing-services#angular-testbed)]
 
 ---
@@ -586,6 +592,71 @@ class: center, middle
 ## Testing HTTP Service
 
 .notetoself[cms.service]
+
+---
+
+layout: true
+
+.chapter[Unit Testing]
+
+---
+
+# Part #3
+
+- NgRx
+
+  - MockStore
+
+- ts-mockito
+
+  - Spies
+
+<br/>
+
+→ Testing with mocked Store
+
+---
+
+layout: true
+
+.chapter[Unit Testing - Part #3]
+
+---
+
+# NgRx MockStore
+
+.bottomlink[[NgRX - Testing](https://ngrx.io/guide/store/testing#using-a-mock-store)]
+
+- relatively new feature
+
+- use `provideMockStore` as TestBed provider
+
+- inject `MockStore`
+
+- use `MockStore.overrideSelector`
+
+---
+
+# ts-mockito Spies
+
+.bottomlink[[GitHub - ts-mockito](https://github.com/NagRock/ts-mockito#main-features)]
+
+- use `spy` to create spy
+
+- use `verify` to check calls
+
+- use `capture` to check arguments
+
+---
+
+class: center, middle
+
+# Coding Time
+
+## Testing with mocked Store
+
+.notetoself[server-config.effects] <br/>
+.notetoself[account.facade]
 
 ---
 
