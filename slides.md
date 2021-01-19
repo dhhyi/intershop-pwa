@@ -376,6 +376,17 @@ describe('Test Artifact', () => {
 
 ---
 
+- ignore tests:
+
+  - `xit`, `xdescribe`
+  - `it.skip`, `describe.skip`
+
+- focus tests:
+  - `fit`, `fdescribe`
+  - `it.only`, `describe.only`
+
+---
+
 layout: true
 
 .chapter[Unit Testing - Part #1]
