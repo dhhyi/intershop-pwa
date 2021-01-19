@@ -31,8 +31,10 @@ name: agenda
   1. [Utility Method](#part1)
   2. [HTTP Service](#part2)
   3. [Angular Components](#part3)
-  4. [Testing with mocked Store](#part4)
-  5. [Testing with real Store](#part5)
+  4. [Mocked Store](#part4)
+  5. [Real Store](#part5)
+  6. [Angular Router](#part6)
+  7. [Observables](#part7)
 
 - e2e Testing
 
@@ -822,3 +824,79 @@ class: center, middle
 .notetoself[products.selectors.spec] <br/>
 .notetoself[products.effects.spec] <br/>
 .notetoself[shopping-store.spec]
+
+---
+
+layout: true
+
+.chapter[[Unit Testing](#agenda)]
+
+---
+
+name: part6
+
+# Part #6 → Testing with Router
+
+- Angular
+
+  - `RouterTestingModule.withRoutes`
+
+  - `fakeAsync` & `tick`
+
+- Custom
+
+  - Testing with Router Store
+
+---
+
+layout: true
+
+.chapter[Unit Testing - Part #6]
+
+---
+
+class: center, middle
+
+## Coding Time
+
+### Testing with Router
+
+.notetoself[TODO] <br/>
+
+---
+
+layout: true
+
+.chapter[[Unit Testing](#agenda)]
+
+---
+
+name: part7
+
+# Part #7 → Testing Observables
+
+- Marbles
+
+- jest
+
+  - `done`
+
+  - virtual time
+
+  - real time
+
+---
+
+layout: true
+
+.chapter[Unit Testing - Part #7]
+
+---
+
+class: center, middle
+
+## Coding Time
+
+### Testing Observables
+
+.notetoself[TODO] <br/>
