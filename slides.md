@@ -657,11 +657,13 @@ layout: true
 
 ## Angular TestBed
 
-- [`TestBed.configureTestingModule`](https://angular.io/api/core/testing/TestBed#configureTestingModule)`({ declarations: [Type<T>] })`
+- [`TestBed.configureTestingModule`](https://angular.io/api/core/testing/TestBed#configureTestingModule)
+  `({ declarations: [Type<T>] })`
 
 - [`TestBed.compileComponents`](https://angular.io/api/core/testing/TestBed#compileComponents)`: Promise<any>`
 
-- [`TestBed.createComponent`](https://angular.io/api/core/testing/TestBed#createComponent)`(Type<T>): `[` ComponentFixture<T>`](https://angular.io/api/core/testing/ComponentFixture)
+- [`TestBed.createComponent`](https://angular.io/api/core/testing/TestBed#createComponent)`(Type<T>): `
+  [` ComponentFixture<T>`](https://angular.io/api/core/testing/ComponentFixture)
 
 --
 
@@ -842,13 +844,47 @@ layout: true
 
 ---
 
+## RouterTestingModule
+
+- imported standalone for providing:
+
+  - [`Router`](https://angular.io/api/router/Router)
+  - [`RouterLink`](https://angular.io/api/router/RouterLink) directive
+
+- [`.withRoutes(Route[])`](https://angular.io/api/router/testing/RouterTestingModule#withRoutes)
+
+  - for 'actual' routing in tests
+  - Component required
+
+- [`Location.path()`](https://angular.io/api/common/Location#path)
+
+.bottomlink[[Angular - RouterTestingModule](https://angular.io/api/router/testing/RouterTestingModule)]
+
+---
+
+## `fakeAsync` + `tick`
+
+- control time: [fakeAsync](https://angular.io/api/core/testing/fakeAsync)
+
+- ??? [Microtask and Macrotask: A Hands-on Approach](https://blog.bitsrc.io/microtask-and-macrotask-a-hands-on-approach-5d77050e2168)
+
+---
+
+## Custom Router Store serializer
+
+- set up like [@ngrx/router-store](https://ngrx.io/guide/router-store)
+
+- Custom Serializer in [PWA Code](https://github.com/dhhyi/intershop-pwa/tree/develop/src/app/core/store/core/router)
+
+---
+
 class: center, middle
 
 ## Coding Time
 
 ### Testing with Router
 
-.notetoself[TODO] <br/>
+.notetoself[quoting.effects] <br/>
 
 ---
 
