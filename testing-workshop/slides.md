@@ -29,6 +29,7 @@ layout: true
   1. Utility Method
   2. HTTP Service
   3. Testing with mocked Store
+  4. Angular Components
 
 - e2e Testing
 
@@ -135,6 +136,12 @@ layout: true
 5. "We want to maintain our code quality!"
 
 .bottomlink[[Create Poll](https://www.strawpoll.me/#?savedPoll=%7B%22title%22:%22Why%20are%20we%20doing%20automated%20testing?%22,%22dupcheck%22:%221%22,%22multi%22:true,%22captcha%22:false,%22options%22:%5B%22%2522We%2520have%2520to%2520reach%2520a%2520certain%2520coverage!%2522%22,%22%2522We%2520want%2520to%2520prevent%2520certain%2520bugs%2520from%2520happening%2520again!%2522%22,%22%2522We%2520want%2520to%2520be%2520sure%2520our%2520changes%2520don't%2520break%2520code%2520we%2520don't%2520know!%2522%22,%22%2522We%2520want%2520to%2520automatically%2520validate%2520all%2520possible%2520scenarios!%2522%22,%22%2522We%2520want%2520to%2520maintain%2520our%2520code%2520quality!%2522%22%5D%7D)]
+
+---
+
+# Confusion Matrix
+
+.fitv[![Confusion Matrix](https://miro.medium.com/max/2102/1*fxiTNIgOyvAombPJx5KGeA.png)]
 
 ---
 
@@ -657,6 +664,54 @@ class: center, middle
 
 .notetoself[server-config.effects] <br/>
 .notetoself[account.facade]
+
+---
+
+layout: true
+
+.chapter[Unit Testing]
+
+---
+
+# Part #4
+
+- Angular
+
+  - TestBed
+
+  - element.querySelector
+
+- ng-mocks
+
+- ISH PWA
+
+  - findAllCustomElements
+
+  - findAllDataTestingIDs
+
+<br/>
+
+→ Testing Angular Components
+
+---
+
+layout: true
+
+.chapter[Unit Testing - Part #4]
+
+---
+
+# Angular TestBed
+
+---
+
+class: center, middle
+
+# Coding Time
+
+## Testing Angular Components
+
+.notetoself[recently-viewed.component]
 
 ---
 
