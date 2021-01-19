@@ -266,6 +266,7 @@ class: center, middle
 
 ---
 
+name: unit-testing-part-template
 layout: true
 
 .chapter[[Unit Testing](#agenda)]
@@ -273,8 +274,9 @@ layout: true
 ---
 
 name: part1
+template: unit-testing-part-template
 
-# Part #1 → Testing Utility Method
+# Part #1 → Testing Utility Methods
 
 - jest
 
@@ -522,15 +524,10 @@ class: center, middle
 
 ---
 
-layout: true
-
-.chapter[[Unit Testing](#agenda)]
-
----
-
 name: part2
+template: unit-testing-part-template
 
-# Part #2 → Testing HTTP Service
+# Part #2 → Testing HTTP Services
 
 - Angular
 
@@ -607,13 +604,8 @@ class: center, middle
 
 ---
 
-layout: true
-
-.chapter[[Unit Testing](#agenda)]
-
----
-
 name: part3
+template: unit-testing-part-template
 
 # Part #3 → Testing Angular Components
 
@@ -717,13 +709,8 @@ class: center, middle
 
 ---
 
-layout: true
-
-.chapter[[Unit Testing](#agenda)]
-
----
-
 name: part4
+template: unit-testing-part-template
 
 # Part #4 → Testing with mocked Store
 
@@ -780,13 +767,8 @@ class: center, middle
 
 ---
 
-layout: true
-
-.chapter[[Unit Testing](#agenda)]
-
----
-
 name: part5
+template: unit-testing-part-template
 
 # Part #5 → Testing with real Store
 
@@ -827,15 +809,10 @@ class: center, middle
 
 ---
 
-layout: true
-
-.chapter[[Unit Testing](#agenda)]
-
----
-
 name: part6
+template: unit-testing-part-template
 
-# Part #6 → Testing with Router
+# Part #6 → Testing with Angular Router
 
 - Angular
 
@@ -865,13 +842,8 @@ class: center, middle
 
 ---
 
-layout: true
-
-.chapter[[Unit Testing](#agenda)]
-
----
-
 name: part7
+template: unit-testing-part-template
 
 # Part #7 → Testing Observables
 
