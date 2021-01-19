@@ -126,7 +126,7 @@ layout: true
 
 ---
 
-# Why are we doing automated testing?
+## Why are we doing automated testing?
 
 1. "We have to reach a certain coverage!"
 
@@ -142,7 +142,7 @@ layout: true
 
 ---
 
-# Confusion Matrix
+## Confusion Matrix
 
 .fitv[![Confusion Matrix](https://miro.medium.com/max/2102/1*fxiTNIgOyvAombPJx5KGeA.png)]
 
@@ -150,13 +150,13 @@ layout: true
 
 class: center, middle
 
-# Testing Mantra
+## Testing Mantra
 
 .bottomlink[[[Wikipedia] Mantra](https://en.wikipedia.org/wiki/Mantra)]
 
 ---
 
-# Testing Mantra
+## Testing Mantra
 
 > Tests are like toilet paper
 
@@ -178,7 +178,7 @@ class: center, middle
 
 ---
 
-# Testing Mantra
+## Testing Mantra
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/wPFt8bJuBD4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -186,7 +186,7 @@ class: center, middle
 
 ---
 
-# Testing Mantra
+## Testing Mantra
 
 Tests are / should be ...
 
@@ -202,13 +202,13 @@ Tests are / should be ...
 
 class: center, middle
 
-# Testing Dimensions
+## Testing Dimensions
 
 ---
 
-# Testing Dimensions
+## Testing Dimensions
 
-## Utilities
+### Utilities
 
 <table class="thirds text-grey">
   <tr>
@@ -220,7 +220,7 @@ class: center, middle
 
 --
 
-## Testing Concepts
+### Testing Concepts
 
 <table class="thirds text-grey">
   <tr>
@@ -232,7 +232,7 @@ class: center, middle
 
 --
 
-## Artifacts
+### Artifacts
 
 <table class="thirds text-grey">
   <tr>
@@ -244,7 +244,7 @@ class: center, middle
 
 ---
 
-# Testing Pyramid
+## Testing Pyramid
 
 .fitv[
 ![Test Pyramid](https://github.com/dhhyi/intershop-pwa/raw/workshop/testing/docs/concepts/testing-test-pyramid.jpg)
@@ -260,7 +260,7 @@ layout: true
 
 class: center, middle
 
-# Unit Testing
+## Unit Testing
 
 ---
 
@@ -292,7 +292,7 @@ layout: true
 
 ---
 
-# jest
+## jest
 
 .bottomlink[[PWA Doku - Deviation from Standard Angular Test Frameworks](https://github.com/dhhyi/intershop-pwa/blob/workshop/testing/docs/concepts/testing.md#deviation-from-standard-angular-test-frameworks)]
 
@@ -310,7 +310,7 @@ layout: true
 
 .chapter[Unit Testing - Part #1]
 
-# General Structure of a jest Test
+## General Structure of a jest Test
 
 .bottomlink[[Jest - Test Setup](https://jestjs.io/docs/en/setup-teardown)]
 
@@ -377,7 +377,7 @@ layout: true
 
 .chapter[Unit Testing - Part #1]
 
-# Importance of Independent Tests
+## Importance of Independent Tests
 
 .bottomlink[[PWA - Guide Jest - Be Careful With Variable Initialization](https://github.com/dhhyi/intershop-pwa/blob/workshop/testing/docs/guides/testing-jest.md#be-careful-with-variable-initialization)]
 
@@ -437,7 +437,7 @@ layout: true
 
 ---
 
-# jest Assertions
+## jest Assertions
 
 - [Matchers](https://jestjs.io/docs/en/using-matchers)
 
@@ -457,7 +457,7 @@ layout: true
 
 ---
 
-# jest Snapshots
+## jest Snapshots
 
 - `expect(obj).toMatchSnapshot(...)`
 
@@ -471,7 +471,7 @@ layout: true
 
 ---
 
-# jest Snapshots - Custom Serializer
+## jest Snapshots - Custom Serializer
 
 - local serializer
 
@@ -492,7 +492,7 @@ expect.addSnapshotSerializer({
 
 ---
 
-# Parameterized Tests
+## Parameterized Tests
 
 `it('description', () => {...});`
 
@@ -512,9 +512,9 @@ Examples:
 
 class: center, middle
 
-# Coding Time
+## Coding Time
 
-## Testing Utility Methods
+### Testing Utility Methods
 
 .notetoself[price.helper]
 
@@ -546,7 +546,7 @@ layout: true
 
 ---
 
-# Angular TestBed
+## Angular TestBed
 
 - ignores [application modules](https://github.com/dhhyi/intershop-pwa/blob/workshop/testing/docs/concepts/project-structure.md#modules)
 
@@ -567,11 +567,11 @@ layout: true
 
 class: center, middle
 
-# What is "Dependency Injection"?
+## What is "Dependency Injection"?
 
 ---
 
-# ts-mockito Mocks
+## ts-mockito Mocks
 
 .bottomlink[[GitHub - ts-mockito](https://github.com/NagRock/ts-mockito#main-features)]
 
@@ -597,9 +597,9 @@ class: center, middle
 
 class: center, middle
 
-# Coding Time
+## Coding Time
 
-## Testing HTTP Service
+### Testing HTTP Service
 
 .notetoself[cms.service]
 
@@ -635,7 +635,7 @@ layout: true
 
 ---
 
-# Requirements for Tests in the PWA
+## Requirements for Tests in the PWA
 
 - Tests should be easily adaptable for projects
 
@@ -651,7 +651,7 @@ layout: true
 
 ---
 
-# Angular TestBed
+## Angular TestBed
 
 - [`TestBed.configureTestingModule`](https://angular.io/api/core/testing/TestBed#configureTestingModule)`({ declarations: [Type<T>] })`
 
@@ -669,7 +669,7 @@ layout: true
 
 ---
 
-# Retrieving Elements
+## Retrieving Elements
 
 - [`Element.querySelector`](https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector)
 
@@ -683,7 +683,7 @@ layout: true
 
 ---
 
-# ng-mocks
+## ng-mocks
 
 .bottomlink[[GitHub - ng-mocks](https://ng-mocks.sudo.eu/)]
 
@@ -695,7 +695,7 @@ layout: true
 
 ---
 
-# Custom ISH PWA Helpers
+## Custom ISH PWA Helpers
 
 - `findAllCustomElements(el: HTMLElement): string[]`
 
@@ -707,9 +707,9 @@ layout: true
 
 class: center, middle
 
-# Coding Time
+## Coding Time
 
-## Testing Angular Components
+### Testing Angular Components
 
 .notetoself[recently-viewed.component]
 
@@ -741,7 +741,7 @@ layout: true
 
 ---
 
-# NgRx MockStore
+## NgRx MockStore
 
 .bottomlink[[NgRX - Testing](https://ngrx.io/guide/store/testing#using-a-mock-store)]
 
@@ -755,7 +755,7 @@ layout: true
 
 ---
 
-# ts-mockito Spies
+## ts-mockito Spies
 
 .bottomlink[[GitHub - ts-mockito](https://github.com/NagRock/ts-mockito#main-features)]
 
@@ -769,9 +769,9 @@ layout: true
 
 class: center, middle
 
-# Coding Time
+## Coding Time
 
-## Testing with mocked Store
+### Testing with mocked Store
 
 .notetoself[server-config.effects] <br/>
 .notetoself[account.facade]
@@ -802,7 +802,7 @@ layout: true
 
 ---
 
-# Custom Implementation
+## Custom Implementation
 
 - [`CoreStoreModule.forTesting`](https://github.com/dhhyi/intershop-pwa/blob/workshop/testing/src/app/core/store/core/core-store.module.ts#L60)
 
@@ -814,9 +814,9 @@ layout: true
 
 class: center, middle
 
-# Coding Time
+## Coding Time
 
-## Testing with real Store
+### Testing with real Store
 
 .notetoself[shopping.facade] <br/>
 .notetoself[products.selectors.spec] <br/>
