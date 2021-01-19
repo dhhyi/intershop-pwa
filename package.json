@@ -1,0 +1,12 @@
+{
+  "name": "testing-workshop",
+  "version": "1.0.0",
+  "description": "Workshop for Testing with PWA",
+  "scripts": {
+    "format": "prettier --write .",
+    "talk": "npx http-server -c-1 .",
+    "talk:watch": "npx remarker serve"
+  },
+  "author": "Danilo Hoffmann",
+  "license": "MIT"
+}

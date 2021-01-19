@@ -1,0 +1,119 @@
+body {
+  font-family: 'Droid Serif', serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: normal;
+}
+
+.remark-code,
+.remark-inline-code {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: x-large;
+}
+
+.remark-code-line-highlighted {
+  background-color: rgb(136 136 82 / 46%);
+}
+
+.remark-slide-content {
+  padding: 0.3em 2em 1em 2em;
+  font-size: xx-large;
+  background: rgb(129, 129, 129);
+  background: linear-gradient(
+    130deg,
+    rgba(129, 129, 129, 1) 0%,
+    rgba(214, 214, 223, 1) 13%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+.remark-slide-content .remark-slide-number {
+  font-size: large;
+}
+
+.clean .remark-slide-number {
+  display: none;
+}
+.clean .chapter {
+  display: none;
+}
+
+.chapter {
+  position: absolute;
+  top: 0.5em;
+  right: 1em;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: xx-large;
+  opacity: 0.5;
+}
+
+.bottomlink {
+  position: absolute;
+  bottom: 0.5em;
+  left: 4em;
+  font-family: 'Droid Serif', serif;
+  font-size: large;
+  opacity: 0.5;
+}
+
+.fitv {
+  display: block;
+  text-align: center;
+}
+.fitv img {
+  height: 500px;
+}
+
+a,
+a:visited {
+  color: #00f;
+  text-decoration: none;
+}
+
+.icon img {
+  height: 1.2em;
+  vertical-align: middle;
+}
+h2 .icon img {
+  height: 0.8em;
+  vertical-align: middle;
+}
+
+table {
+  display: table !important;
+  width: 100%;
+}
+table.thirds th,
+table.thirds td {
+  display: table-cell;
+  width: 33%;
+}
+
+.text-grey {
+  color: #666;
+}
+
+.notetoself {
+  color: #aaa;
+}
+
+blockquote p {
+  position: relative;
+  left: 50px;
+  width: 70%;
+  font-style: italic;
+}
+blockquote::before {
+  position: relative;
+  top: 60px;
+  display: block;
+  margin-right: 0.25em;
+  font-size: 2em;
+  line-height: 0.1em;
+  color: #ccc;
+  vertical-align: -0.4em;
+  content: open-quote;
+}
