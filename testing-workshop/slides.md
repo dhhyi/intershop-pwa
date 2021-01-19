@@ -20,17 +20,19 @@ layout: true
 
 ---
 
+name: agenda
+
 # Workshop Contents
 
 - Why?
 
 - unit Testing
 
-  1. Utility Method
-  2. HTTP Service
-  3. Angular Components
-  4. Testing with mocked Store
-  5. Testing with real Store
+  1. [Utility Method](#part1)
+  2. [HTTP Service](#part2)
+  3. [Angular Components](#part3)
+  4. [Testing with mocked Store](#part4)
+  5. [Testing with real Store](#part5)
 
 - e2e Testing
 
@@ -264,9 +266,11 @@ class: center, middle
 
 layout: true
 
-.chapter[Unit Testing]
+.chapter[[Unit Testing](#agenda)]
 
 ---
+
+name: part1
 
 # Part #1 → Testing Utility Method
 
@@ -518,9 +522,11 @@ class: center, middle
 
 layout: true
 
-.chapter[Unit Testing]
+.chapter[[Unit Testing](#agenda)]
 
 ---
+
+name: part2
 
 # Part #2 → Testing HTTP Service
 
@@ -601,9 +607,11 @@ class: center, middle
 
 layout: true
 
-.chapter[Unit Testing]
+.chapter[[Unit Testing](#agenda)]
 
 ---
+
+name: part3
 
 # Part #3 → Testing Angular Components
 
@@ -709,9 +717,11 @@ class: center, middle
 
 layout: true
 
-.chapter[Unit Testing]
+.chapter[[Unit Testing](#agenda)]
 
 ---
+
+name: part4
 
 # Part #4 → Testing with mocked Store
 
@@ -770,9 +780,11 @@ class: center, middle
 
 layout: true
 
-.chapter[Unit Testing]
+.chapter[[Unit Testing](#agenda)]
 
 ---
+
+name: part5
 
 # Part #5 → Testing with real Store
 
