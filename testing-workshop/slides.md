@@ -37,27 +37,6 @@ layout: true
 
 ---
 
-name: agenda
-
-# Workshop Contents
-
-- Why?
-
-- unit Testing
-
-  1. [Utility Method](#part1)
-  2. [HTTP Service](#part2)
-  3. [Angular Components](#part3)
-  4. [Mocked Store](#part4)
-  5. [Real Store](#part5)
-  6. [Angular Router](#part6)
-  7. [Observables](#part7)
-  8. [Angular HttpClient](#part8)
-
-- e2e Testing
-
----
-
 # Workshop Etiquette
 
 - Interactive!
@@ -79,6 +58,27 @@ name: agenda
 --
 
 - Entertainment! 🍿
+
+---
+
+name: agenda
+
+# Workshop Contents
+
+- Why?
+
+- unit Testing
+
+  1. [Utility Method](#part1)
+  2. [HTTP Service](#part2)
+  3. [Angular Components](#part3)
+  4. [Mocked Store](#part4)
+  5. [Real Store](#part5)
+  6. [Angular Router](#part6)
+  7. [Observables](#part7)
+  8. [Angular HttpClient](#part8)
+
+- e2e Testing
 
 ---
 
