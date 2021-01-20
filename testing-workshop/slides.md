@@ -9,7 +9,11 @@ name: break-template
 layout: true
 class: clean
 
-## Break ~10 min
+## .graffiti[Break ~ 5-10 min]
+
+---
+
+layout: true
 
 ---
 
@@ -17,9 +21,7 @@ class: center, middle, clean
 
 # .icon[![Intershop](https://upload.wikimedia.org/wikipedia/commons/9/9c/Intershop-Communications-AG.svg) ![PWA](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Progressive_Web_Apps_Logo.svg/2880px-Progressive_Web_Apps_Logo.svg.png)]
 
-# Testing Workshop
-
-<br/>
+# .graffiti[Testing Workshop]
 
 .center[
 
@@ -288,7 +290,7 @@ template: break-template
 
 class: center, middle
 
-## Unit Testing
+## .graffiti[.huge[Unit Testing]]
 
 ---
 
