@@ -1,3 +1,18 @@
+name: unit-testing-part-template
+layout: true
+
+.chapter[[Unit Testing](#agenda)]
+
+---
+
+name: break-template
+layout: true
+class: clean
+
+## Break ~10 min
+
+---
+
 class: center, middle, clean
 
 # .icon[![Intershop](https://upload.wikimedia.org/wikipedia/commons/9/9c/Intershop-Communications-AG.svg) ![PWA](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Progressive_Web_Apps_Logo.svg/2880px-Progressive_Web_Apps_Logo.svg.png)]
@@ -265,10 +280,15 @@ class: center, middle
 
 ---
 
-name: unit-testing-part-template
-layout: true
+template: break-template
 
-.chapter[[Unit Testing](#agenda)]
+<iframe width="800" height="500" src="https://www.youtube.com/embed/U1DX7eyUfv0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+class: center, middle
+
+## Unit Testing
 
 ---
 
@@ -534,6 +554,12 @@ class: center, middle
 
 ---
 
+template: break-template
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/TD0MUW8LKqg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 name: part2
 template: unit-testing-part-template
 
@@ -611,6 +637,12 @@ class: center, middle
 ### Testing HTTP Service
 
 .notetoself[cms.service]
+
+---
+
+template: break-template
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/h_D3VFfhvs4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
@@ -721,6 +753,12 @@ class: center, middle
 
 ---
 
+template: break-template
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/CiXNIjGX1hY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 name: part4
 template: unit-testing-part-template
 
@@ -779,6 +817,12 @@ class: center, middle
 
 ---
 
+template: break-template
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/eNV9gv0NmzU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 name: part5
 template: unit-testing-part-template
 
@@ -818,6 +862,12 @@ class: center, middle
 .notetoself[products.selectors.spec] <br/>
 .notetoself[products.effects.spec] <br/>
 .notetoself[shopping-store.spec]
+
+---
+
+template: break-template
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/gLCduDJVksc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
@@ -888,6 +938,12 @@ class: center, middle
 
 ---
 
+template: break-template
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/eINgmy4dUOA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 name: part7
 template: unit-testing-part-template
 
@@ -940,6 +996,12 @@ class: center, middle
 ### Testing Observables
 
 .notetoself[TODO] <br/>
+
+---
+
+template: break-template
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/PkQ5rEJaTmk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
