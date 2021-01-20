@@ -61,6 +61,26 @@ layout: true
 
 ---
 
+## Title
+
+- chapter top right
+
+- slide # bottom right
+
+- Reference link on bottom
+
+.bottomlink[[Bottom Link](https://www.youtube.com/watch?v=dQw4w9WgXcQ)]
+
+---
+
+## Availability
+
+Slides: https://dhhyi.github.io/intershop-pwa
+
+Code: https://github.com/dhhyi/intershop-pwa/tree/workshop/testing
+
+---
+
 name: agenda
 
 # Workshop Contents
