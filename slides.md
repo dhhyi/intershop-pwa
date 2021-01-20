@@ -1,10 +1,27 @@
+name: unit-testing-part-template
+layout: true
+
+.chapter[[Unit Testing](#agenda)]
+
+---
+
+name: break-template
+layout: true
+class: clean
+
+## .graffiti[Break ~ 5-10 min]
+
+---
+
+layout: true
+
+---
+
 class: center, middle, clean
 
 # .icon[![Intershop](https://upload.wikimedia.org/wikipedia/commons/9/9c/Intershop-Communications-AG.svg) ![PWA](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Progressive_Web_Apps_Logo.svg/2880px-Progressive_Web_Apps_Logo.svg.png)]
 
-# Testing Workshop
-
-<br/>
+# .graffiti[Testing Workshop]
 
 .center[
 
@@ -17,27 +34,6 @@ class: center, middle, clean
 layout: true
 
 .chapter[Introduction]
-
----
-
-name: agenda
-
-# Workshop Contents
-
-- Why?
-
-- unit Testing
-
-  1. [Utility Method](#part1)
-  2. [HTTP Service](#part2)
-  3. [Angular Components](#part3)
-  4. [Mocked Store](#part4)
-  5. [Real Store](#part5)
-  6. [Angular Router](#part6)
-  7. [Observables](#part7)
-  8. [Angular HttpClient](#part8)
-
-- e2e Testing
 
 ---
 
@@ -62,6 +58,27 @@ name: agenda
 --
 
 - Entertainment! 🍿
+
+---
+
+name: agenda
+
+# Workshop Contents
+
+- Why?
+
+- unit Testing
+
+  1. [Utility Method](#part1)
+  2. [HTTP Service](#part2)
+  3. [Angular Components](#part3)
+  4. [Mocked Store](#part4)
+  5. [Real Store](#part5)
+  6. [Angular Router](#part6)
+  7. [Observables](#part7)
+  8. [Angular HttpClient](#part8)
+
+- e2e Testing
 
 ---
 
@@ -265,10 +282,15 @@ class: center, middle
 
 ---
 
-name: unit-testing-part-template
-layout: true
+template: break-template
 
-.chapter[[Unit Testing](#agenda)]
+<iframe width="800" height="500" src="https://www.youtube.com/embed/U1DX7eyUfv0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+class: center, middle
+
+## .graffiti[.huge[Unit Testing]]
 
 ---
 
@@ -534,6 +556,12 @@ class: center, middle
 
 ---
 
+template: break-template
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/TD0MUW8LKqg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 name: part2
 template: unit-testing-part-template
 
@@ -611,6 +639,12 @@ class: center, middle
 ### Testing HTTP Service
 
 .notetoself[cms.service]
+
+---
+
+template: break-template
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/h_D3VFfhvs4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
@@ -721,6 +755,12 @@ class: center, middle
 
 ---
 
+template: break-template
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/CiXNIjGX1hY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 name: part4
 template: unit-testing-part-template
 
@@ -779,6 +819,12 @@ class: center, middle
 
 ---
 
+template: break-template
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/eNV9gv0NmzU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 name: part5
 template: unit-testing-part-template
 
@@ -818,6 +864,12 @@ class: center, middle
 .notetoself[products.selectors.spec] <br/>
 .notetoself[products.effects.spec] <br/>
 .notetoself[shopping-store.spec]
+
+---
+
+template: break-template
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/gLCduDJVksc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
@@ -888,6 +940,12 @@ class: center, middle
 
 ---
 
+template: break-template
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/eINgmy4dUOA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 name: part7
 template: unit-testing-part-template
 
@@ -899,15 +957,37 @@ template: unit-testing-part-template
 
   - `done`
 
-  - virtual time
-
-  - real time
-
 ---
 
 layout: true
 
 .chapter[Unit Testing - Part #7]
+
+---
+
+## RxJS Marbles
+
+- representation of [`marble model`](https://rxmarbles.com/)
+
+- [`toBeObservable`](https://github.com/just-jeb/jest-marbles#tobeobservable)
+
+- [WayBack Machine](https://web.archive.org/web/20180725035440/https://github.com/ReactiveX/rxjs/blob/master/doc/marble-testing.md)
+
+- [Syntax](https://github.com/staltz/RxJSNext/blob/master/doc/writing-marble-tests.md)
+
+---
+
+## jest Time
+
+- [jest `done`](https://jestjs.io/docs/en/asynchronous)
+
+- `jest.useFakeTimers();` --> [jest - Timer Mocks](https://jestjs.io/docs/en/timer-mocks)
+
+  - doesn't work with all other concepts
+  - currently unused (as far as I see)
+
+- `setTimeout` uses real time
+  - Test timeout of 5sec
 
 ---
 
@@ -921,18 +1001,39 @@ class: center, middle
 
 ---
 
-name: part8
-template: unit-testing-part-template
+template: break-template
 
-# Part #8 → Testing Angular HttpClient
-
-- HttpClientTestingModule
+<iframe width="800" height="500" src="https://www.youtube.com/embed/PkQ5rEJaTmk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
 layout: true
 
 .chapter[Unit Testing - Part #8]
+
+---
+
+name: part8
+template: unit-testing-part-template
+
+# Part #8 → Testing Angular HttpClient
+
+- `HttpClientTestingModule`
+
+---
+
+## HttpClientTestingModule
+
+- [`HttpClientTestingModule`](https://angular.io/guide/http#testing-http-requests)
+
+- all ICM REST API services use `ApiService`
+
+- 3rd party service usage
+
+- [`HttpTestingController`](https://angular.io/api/common/http/testing/HttpTestingController):
+  - `verify`
+  - `expectOne`
+  - `expectOne.flush`
 
 ---
 
