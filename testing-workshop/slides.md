@@ -180,6 +180,18 @@ layout: true
 
 ---
 
+template: break-template
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/XRufAykZPnE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+class: center, middle
+
+## .graffiti[.huge[Voting Results]]
+
+---
+
 ## Confusion Matrix
 
 .fitv[![Confusion Matrix](https://miro.medium.com/max/2102/1*fxiTNIgOyvAombPJx5KGeA.png)]
