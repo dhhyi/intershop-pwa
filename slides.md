@@ -39,6 +39,8 @@ layout: true
 
 # Workshop Etiquette
 
+.bottomlink[[Wikipedia Etiquette](https://en.wikipedia.org/wiki/Etiquette)]
+
 - Interactive!
 
 - 💭 vs. 💬
